@@ -18,10 +18,8 @@ A implementação reforça conceitos de:
 
 ## Capturas de Tela
 
-### 1. Exemplo com valores diferentes
+### 1. Exemplo com valores diferentes e dados alterados
 ![Print 1](assets/img/print.jpeg)  
-
-### 2. Outro exemplo com dados alterados
 ![Print 2](assets/img/print2.jpeg)  
 
 ## Tecnologias Utilizadas

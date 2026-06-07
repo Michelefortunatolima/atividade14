@@ -1,0 +1,166 @@
+:root {
+    --bg-main: #121212;
+    --bg-card: #1a1a1a;
+    --bg-nav: #161616;
+    --border-color: #2d2d2d;
+    --text-primary-blue: #2f80ed; 
+    --border-blue: #1f509e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.musichub-theme {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-main) !important;
+    color: #ffffff !important;
+    line-height: 1.6;
+    overflow-x: hidden;
+    letter-spacing: -0.2px;
+}
+
+
+.navbar-custom {
+    background-color: var(--bg-nav) !important;
+    border-bottom: 1px solid rgba(47, 128, 237, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+
+.navbar-brand {
+    color: #ffffff !important; 
+    font-size: 1.6rem !important;
+    font-weight: 800 !important;
+}
+
+.brand-accent {
+    color: var(--text-primary-blue) !important; 
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-primary-blue) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+}
+
+.text-blue-custom, .text-warning {
+    color: var(--text-primary-blue) !important;
+    font-weight: 800;
+}
+
+.carousel-img-style {
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(0.35) contrast(1.05);
+}
+
+.custom-caption-box {
+    bottom: 25% !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-blue-custom {
+    background-color: transparent !important;
+    color: var(--text-primary-blue) !important;
+    border: 1px solid var(--text-primary-blue) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-blue-custom:hover {
+    background-color: var(--text-primary-blue) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(47, 128, 237, 0.4);
+}
+
+.btn-blue-solid {
+    background-color: var(--text-primary-blue) !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 600;
+}
+
+.btn-blue-solid:hover {
+    background-color: var(--border-blue) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(47, 128, 237, 0.5);
+}
+
+.musichub-card {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 14px !important;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease;
+}
+
+.musichub-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--text-primary-blue) !important;
+    box-shadow: 0 12px 30px rgba(47, 128, 237, 0.15) !important;
+}
+
+.card-img-style {
+    height: 240px;
+    object-fit: cover;
+}
+
+.musichub-card .card-body p,
+.style-card-desc,
+.album-desc-text,
+.card-text {
+    color: #ffffff !important;
+    opacity: 0.85;
+}
+
+.section-title-blue {
+    color: var(--text-primary-blue) !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+
+.main-footer {
+    background-color: #0b0b0b !important;
+    border-top: 1px solid var(--border-color) !important;
+}
+
+.footer-student-info p {
+    color: #ffffff !important;
+}
+
+.footer-student-info strong {
+    color: #e0e0e0 !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-img-style {
+        height: 280px;
+    }
+    .custom-caption-box {
+        bottom: 10% !important;
+    }
+    .navbar-brand {
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+    }
+    .navbar-nav {
+        text-align: center;
+        padding-top: 10px;
+    }
+}
